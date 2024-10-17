@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáfaro duplo arduíno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <a href="index.html">Principal   |</a>
+        <a href="index2.html">Semáfaro simples tinkercad  |</a>
+        <a href="index3.html">Semáfaro simples arduíno   |</a>
+        <a href="index4.html">Semáfaro duplo tinkercad   |</a>
+        <br>
+        <a href="index5.html">Semáfaro duplo arduíno   |</a>
+        <a href="index6.html">Contador   |</a>
+        <a href="index7.html">Conatdor inverso   |</a>
+        <a href="index8.html">Contador com semáforo duplo</a>
+    </div>
+    <h1>Circuito do projeto:</h1>
+    <br>
+    <img src="10.jpg" alt="">
+    <br>
+    <p>Imagem retirada do: <a href="http://https://www.tinkercad.com/">tinkercad</a></p>
+    <br>
+    <code><pre>
+        // C++ code
+        //
+        void setup()
+        {
+          pinMode(2, OUTPUT);
+          pinMode(3, OUTPUT);
+          pinMode(4, OUTPUT);
+          pinMode(5, OUTPUT);
+          pinMode(6, OUTPUT);
+          pinMode(7, OUTPUT);
+          pinMode(8, OUTPUT);
+          pinMode(A0, OUTPUT);
+          pinMode(A1, OUTPUT);
+          pinMode(A2, OUTPUT);
+          pinMode(A3, OUTPUT);
+          pinMode(A4, OUTPUT);
+          pinMode(A5, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, LOW);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, HIGH);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          digitalWrite(A0, HIGH);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, LOW);
+          digitalWrite(A4, HIGH);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, LOW);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, HIGH);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, LOW);
+          digitalWrite(A2, HIGH);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, HIGH);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, LOW);
+          digitalWrite(5, HIGH);
+          digitalWrite(6, HIGH);
+          digitalWrite(7, LOW);
+          digitalWrite(8, HIGH);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, HIGH);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(2, LOW);
+          digitalWrite(3, HIGH);
+          digitalWrite(4, HIGH);
+          digitalWrite(5, LOW);
+          digitalWrite(6, LOW);
+          digitalWrite(7, LOW);
+          digitalWrite(8, LOW);
+          digitalWrite(A0, LOW);
+          digitalWrite(A1, HIGH);
+          digitalWrite(A2, LOW);
+          digitalWrite(A3, HIGH);
+          digitalWrite(A4, LOW);
+          digitalWrite(A5, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+        }
+    </pre>
+   
+    </code>
